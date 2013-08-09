@@ -1,0 +1,9 @@
+C:\Users\user\AppData\Local\Temporary Projects\Contol de partes y equipos\bin\Debug\Contol de partes y equipos.exe
+C:\Users\user\AppData\Local\Temporary Projects\Contol de partes y equipos\bin\Debug\Contol de partes y equipos.pdb
+C:\Users\user\AppData\Local\Temporary Projects\Contol de partes y equipos\obj\x86\Debug\Contol_de_partes_y_equipos.frm_Principal.resources
+C:\Users\user\AppData\Local\Temporary Projects\Contol de partes y equipos\obj\x86\Debug\Contol_de_partes_y_equipos.frm_IngresoReclamo.resources
+C:\Users\user\AppData\Local\Temporary Projects\Contol de partes y equipos\obj\x86\Debug\Contol_de_partes_y_equipos.frm_IngresoVehiculo.resources
+C:\Users\user\AppData\Local\Temporary Projects\Contol de partes y equipos\obj\x86\Debug\Contol_de_partes_y_equipos.Properties.Resources.resources
+C:\Users\user\AppData\Local\Temporary Projects\Contol de partes y equipos\obj\x86\Debug\Contol de partes y equipos.csproj.GenerateResource.Cache
+C:\Users\user\AppData\Local\Temporary Projects\Contol de partes y equipos\obj\x86\Debug\Contol de partes y equipos.exe
+C:\Users\user\AppData\Local\Temporary Projects\Contol de partes y equipos\obj\x86\Debug\Contol de partes y equipos.pdb
