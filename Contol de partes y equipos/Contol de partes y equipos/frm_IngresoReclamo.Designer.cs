@@ -45,22 +45,23 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboBox1
             // 
             this.comboBox1.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(205, 13);
+            this.comboBox1.Location = new System.Drawing.Point(182, 37);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(215, 23);
+            this.comboBox1.Size = new System.Drawing.Size(238, 23);
             this.comboBox1.TabIndex = 0;
             // 
             // lbl_CiaSeguros
             // 
             this.lbl_CiaSeguros.AutoSize = true;
-            this.lbl_CiaSeguros.Location = new System.Drawing.Point(17, 13);
+            this.lbl_CiaSeguros.Location = new System.Drawing.Point(17, 41);
             this.lbl_CiaSeguros.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_CiaSeguros.Name = "lbl_CiaSeguros";
             this.lbl_CiaSeguros.Size = new System.Drawing.Size(143, 17);
@@ -70,7 +71,7 @@
             // lbl_NoReclamo
             // 
             this.lbl_NoReclamo.AutoSize = true;
-            this.lbl_NoReclamo.Location = new System.Drawing.Point(17, 94);
+            this.lbl_NoReclamo.Location = new System.Drawing.Point(17, 16);
             this.lbl_NoReclamo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_NoReclamo.Name = "lbl_NoReclamo";
             this.lbl_NoReclamo.Size = new System.Drawing.Size(88, 17);
@@ -80,10 +81,10 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(180, 89);
+            this.textBox1.Location = new System.Drawing.Point(182, 13);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(240, 22);
+            this.textBox1.Size = new System.Drawing.Size(214, 22);
             this.textBox1.TabIndex = 3;
             // 
             // btn_Guardar
@@ -115,16 +116,16 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(180, 114);
+            this.textBox2.Location = new System.Drawing.Point(112, 114);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(240, 22);
+            this.textBox2.Size = new System.Drawing.Size(308, 22);
             this.textBox2.TabIndex = 7;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 119);
+            this.label1.Location = new System.Drawing.Point(17, 115);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 17);
@@ -144,14 +145,13 @@
             // btn_nuevoCiaSeguros
             // 
             this.btn_nuevoCiaSeguros.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_nuevoCiaSeguros.Location = new System.Drawing.Point(174, 11);
+            this.btn_nuevoCiaSeguros.Location = new System.Drawing.Point(158, 37);
             this.btn_nuevoCiaSeguros.Name = "btn_nuevoCiaSeguros";
             this.btn_nuevoCiaSeguros.Size = new System.Drawing.Size(24, 25);
             this.btn_nuevoCiaSeguros.TabIndex = 10;
             this.btn_nuevoCiaSeguros.Text = "+";
             this.btn_nuevoCiaSeguros.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_nuevoCiaSeguros.UseVisualStyleBackColor = true;
-            this.btn_nuevoCiaSeguros.Click += new System.EventHandler(this.btn_nuevoCiaSeguros_Click);
             // 
             // richTextBox1
             // 
@@ -165,7 +165,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(174, 36);
+            this.button1.Location = new System.Drawing.Point(158, 62);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(24, 25);
             this.button1.TabIndex = 14;
@@ -176,7 +176,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 44);
+            this.label3.Location = new System.Drawing.Point(17, 63);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 17);
@@ -187,16 +187,16 @@
             // 
             this.comboBox2.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(205, 38);
+            this.comboBox2.Location = new System.Drawing.Point(182, 62);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(215, 23);
+            this.comboBox2.Size = new System.Drawing.Size(238, 23);
             this.comboBox2.TabIndex = 12;
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(174, 61);
+            this.button2.Location = new System.Drawing.Point(158, 84);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(24, 25);
             this.button2.TabIndex = 17;
@@ -207,7 +207,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 69);
+            this.label4.Location = new System.Drawing.Point(17, 88);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 17);
@@ -218,17 +218,29 @@
             // 
             this.comboBox3.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(205, 63);
+            this.comboBox3.Location = new System.Drawing.Point(182, 87);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(215, 23);
+            this.comboBox3.Size = new System.Drawing.Size(238, 23);
             this.comboBox3.TabIndex = 15;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(397, 12);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(25, 25);
+            this.button3.TabIndex = 18;
+            this.button3.Text = "...";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // frm_IngresoReclamo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(435, 260);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBox3);
@@ -277,5 +289,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Button button3;
     }
 }

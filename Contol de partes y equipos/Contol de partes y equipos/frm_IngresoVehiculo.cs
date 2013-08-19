@@ -20,6 +20,5 @@ namespace Contol_de_partes_y_equipos
         {
 
         }
-
     }
 }

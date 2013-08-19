@@ -122,28 +122,24 @@
             this.mi_mantRamo.Name = "mi_mantRamo";
             this.mi_mantRamo.Size = new System.Drawing.Size(189, 22);
             this.mi_mantRamo.Text = "Ramo";
-            this.mi_mantRamo.Click += new System.EventHandler(this.mi_mantRamo_Click);
             // 
             // mi_mantCiaSeguros
             // 
             this.mi_mantCiaSeguros.Name = "mi_mantCiaSeguros";
             this.mi_mantCiaSeguros.Size = new System.Drawing.Size(189, 22);
             this.mi_mantCiaSeguros.Text = "Compañia de seguros";
-            this.mi_mantCiaSeguros.Click += new System.EventHandler(this.mi_mantCiaSeguros_Click);
             // 
             // mi_mantTaller
             // 
             this.mi_mantTaller.Name = "mi_mantTaller";
             this.mi_mantTaller.Size = new System.Drawing.Size(189, 22);
             this.mi_mantTaller.Text = "Taller";
-            this.mi_mantTaller.Click += new System.EventHandler(this.mi_mantTaller_Click);
             // 
             // mi_mantCiudad
             // 
             this.mi_mantCiudad.Name = "mi_mantCiudad";
             this.mi_mantCiudad.Size = new System.Drawing.Size(189, 22);
             this.mi_mantCiudad.Text = "Ciudad";
-            this.mi_mantCiudad.Click += new System.EventHandler(this.mi_mantCiudad_Click);
             // 
             // mi_reportes
             // 

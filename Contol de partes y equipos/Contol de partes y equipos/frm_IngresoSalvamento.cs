@@ -21,6 +21,11 @@ namespace Contol_de_partes_y_equipos
 
         }
 
+        private void chk_vehiculo_CheckedChanged(object sender, EventArgs e)
+        {
+            cbo_vehiculo.Visible = true;
+        }
+
         
     }
 }

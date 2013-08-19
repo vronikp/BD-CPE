@@ -33,7 +33,6 @@ namespace Contol_de_partes_y_equipos
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
-            
             if (verificaUsuario(text_usuario.Text, text_clave.Text))
             {
                 this.Hide();

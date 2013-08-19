@@ -21,11 +21,6 @@ namespace Contol_de_partes_y_equipos
 
         }
 
-        private void btn_nuevoCiaSeguros_Click(object sender, EventArgs e)
-        {
-            frm_MantCiaSeguro frmMantCiaSeguro = new frm_MantCiaSeguro();
-            frmMantCiaSeguro.Show();
-        }
 
 
     }

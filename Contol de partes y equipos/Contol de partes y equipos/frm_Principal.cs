@@ -20,6 +20,7 @@ namespace Contol_de_partes_y_equipos
         private void mi_ingresoReclamo_Click(object sender, EventArgs e)
         {
             frm_IngresoReclamo frm_IngReclamo = new frm_IngresoReclamo();
+            frm_IngReclamo.MdiParent = this;
             frm_IngReclamo.Show();
         }
 
@@ -35,30 +36,7 @@ namespace Contol_de_partes_y_equipos
             frm_IngSalvamento.Show();
         }
 
-        private void mi_mantRamo_Click(object sender, EventArgs e)
-        {
-            frm_MantRamo frm_mantRamo = new frm_MantRamo();
-            frm_mantRamo.Show();
-        }
-
-        private void mi_mantCiaSeguros_Click(object sender, EventArgs e)
-        {
-            frm_MantCiaSeguro frm_mantCia = new frm_MantCiaSeguro();
-            frm_mantCia.Show();
-        }
-
-        private void mi_mantTaller_Click(object sender, EventArgs e)
-        {
-            frm_MantTaller frm_mantTaller = new frm_MantTaller();
-            frm_mantTaller.Show();
-        }
-
-        private void mi_mantCiudad_Click(object sender, EventArgs e)
-        {
-            frm_MantCiudad frm_mantCiudad = new frm_MantCiudad();
-            frm_mantCiudad.Show();
-        }
-
+       
         private void mi_rprSalvamentoCia_Click(object sender, EventArgs e)
         {
             frm_RepSalvamentoPorCia frm_repSalvCia = new frm_RepSalvamentoPorCia();

@@ -53,30 +53,6 @@
     <Compile Include="frm_InicioSesion.Designer.cs">
       <DependentUpon>frm_InicioSesion.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_MantCiaSeguro.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_MantCiaSeguro.Designer.cs">
-      <DependentUpon>frm_MantCiaSeguro.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_MantCiudad.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_MantCiudad.Designer.cs">
-      <DependentUpon>frm_MantCiudad.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_MantRamo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_MantRamo.Designer.cs">
-      <DependentUpon>frm_MantRamo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_MantTaller.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_MantTaller.Designer.cs">
-      <DependentUpon>frm_MantTaller.cs</DependentUpon>
-    </Compile>
     <Compile Include="frm_IngresoReclamo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,18 +102,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_IngresoSalvamento.resx">
       <DependentUpon>frm_IngresoSalvamento.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_MantCiaSeguro.resx">
-      <DependentUpon>frm_MantCiaSeguro.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_MantCiudad.resx">
-      <DependentUpon>frm_MantCiudad.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_MantRamo.resx">
-      <DependentUpon>frm_MantRamo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_MantTaller.resx">
-      <DependentUpon>frm_MantTaller.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_IngresoReclamo.resx">
       <DependentUpon>frm_IngresoReclamo.cs</DependentUpon>
