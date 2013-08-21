@@ -61,6 +61,7 @@ namespace Contol_de_partes_y_equipos
                     return false;
                 }
             }*/
+            Program.usuario = usuario;
             return true;
         }
     }

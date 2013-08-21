@@ -28,35 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbo_CiaSeguros = new System.Windows.Forms.ComboBox();
             this.lbl_CiaSeguros = new System.Windows.Forms.Label();
             this.lbl_NoReclamo = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_NoReclamo = new System.Windows.Forms.TextBox();
             this.btn_Guardar = new System.Windows.Forms.Button();
             this.btn_Cancelar = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_Cliente = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_nuevoCiaSeguros = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.txt_Observacion = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbo_Ramo = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cbo_Cobertura = new System.Windows.Forms.ComboBox();
             this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // cbo_CiaSeguros
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(182, 37);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(238, 23);
-            this.comboBox1.TabIndex = 0;
+            this.cbo_CiaSeguros.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbo_CiaSeguros.FormattingEnabled = true;
+            this.cbo_CiaSeguros.Location = new System.Drawing.Point(182, 37);
+            this.cbo_CiaSeguros.Margin = new System.Windows.Forms.Padding(4);
+            this.cbo_CiaSeguros.Name = "cbo_CiaSeguros";
+            this.cbo_CiaSeguros.Size = new System.Drawing.Size(238, 23);
+            this.cbo_CiaSeguros.TabIndex = 0;
             // 
             // lbl_CiaSeguros
             // 
@@ -78,14 +78,14 @@
             this.lbl_NoReclamo.TabIndex = 2;
             this.lbl_NoReclamo.Text = "No. Reclamo";
             // 
-            // textBox1
+            // txt_NoReclamo
             // 
-            this.textBox1.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(182, 13);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(214, 22);
-            this.textBox1.TabIndex = 3;
+            this.txt_NoReclamo.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_NoReclamo.Location = new System.Drawing.Point(182, 13);
+            this.txt_NoReclamo.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_NoReclamo.Name = "txt_NoReclamo";
+            this.txt_NoReclamo.Size = new System.Drawing.Size(214, 22);
+            this.txt_NoReclamo.TabIndex = 3;
             // 
             // btn_Guardar
             // 
@@ -99,6 +99,7 @@
             this.btn_Guardar.Text = "Guardar";
             this.btn_Guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Guardar.UseVisualStyleBackColor = true;
+            this.btn_Guardar.Click += new System.EventHandler(this.btn_Guardar_Click);
             // 
             // btn_Cancelar
             // 
@@ -112,15 +113,16 @@
             this.btn_Cancelar.Text = "Cancelar";
             this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
-            // textBox2
+            // txt_Cliente
             // 
-            this.textBox2.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(112, 114);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(308, 22);
-            this.textBox2.TabIndex = 7;
+            this.txt_Cliente.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Cliente.Location = new System.Drawing.Point(112, 114);
+            this.txt_Cliente.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_Cliente.Name = "txt_Cliente";
+            this.txt_Cliente.Size = new System.Drawing.Size(308, 22);
+            this.txt_Cliente.TabIndex = 7;
             // 
             // label1
             // 
@@ -153,14 +155,14 @@
             this.btn_nuevoCiaSeguros.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_nuevoCiaSeguros.UseVisualStyleBackColor = true;
             // 
-            // richTextBox1
+            // txt_Observacion
             // 
-            this.richTextBox1.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(112, 142);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(308, 56);
-            this.richTextBox1.TabIndex = 11;
-            this.richTextBox1.Text = "";
+            this.txt_Observacion.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Observacion.Location = new System.Drawing.Point(112, 142);
+            this.txt_Observacion.Name = "txt_Observacion";
+            this.txt_Observacion.Size = new System.Drawing.Size(308, 56);
+            this.txt_Observacion.TabIndex = 11;
+            this.txt_Observacion.Text = "";
             // 
             // button1
             // 
@@ -183,15 +185,15 @@
             this.label3.TabIndex = 13;
             this.label3.Text = "Ramo";
             // 
-            // comboBox2
+            // cbo_Ramo
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(182, 62);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(238, 23);
-            this.comboBox2.TabIndex = 12;
+            this.cbo_Ramo.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbo_Ramo.FormattingEnabled = true;
+            this.cbo_Ramo.Location = new System.Drawing.Point(182, 62);
+            this.cbo_Ramo.Margin = new System.Windows.Forms.Padding(4);
+            this.cbo_Ramo.Name = "cbo_Ramo";
+            this.cbo_Ramo.Size = new System.Drawing.Size(238, 23);
+            this.cbo_Ramo.TabIndex = 12;
             // 
             // button2
             // 
@@ -214,15 +216,15 @@
             this.label4.TabIndex = 16;
             this.label4.Text = "Cobertura";
             // 
-            // comboBox3
+            // cbo_Cobertura
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(182, 87);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(238, 23);
-            this.comboBox3.TabIndex = 15;
+            this.cbo_Cobertura.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbo_Cobertura.FormattingEnabled = true;
+            this.cbo_Cobertura.Location = new System.Drawing.Point(182, 87);
+            this.cbo_Cobertura.Margin = new System.Windows.Forms.Padding(4);
+            this.cbo_Cobertura.Name = "cbo_Cobertura";
+            this.cbo_Cobertura.Size = new System.Drawing.Size(238, 23);
+            this.cbo_Cobertura.TabIndex = 15;
             // 
             // button3
             // 
@@ -243,21 +245,21 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.cbo_Cobertura);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.cbo_Ramo);
+            this.Controls.Add(this.txt_Observacion);
             this.Controls.Add(this.btn_nuevoCiaSeguros);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txt_Cliente);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.btn_Guardar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_NoReclamo);
             this.Controls.Add(this.lbl_NoReclamo);
             this.Controls.Add(this.lbl_CiaSeguros);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbo_CiaSeguros);
             this.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -272,23 +274,23 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbo_CiaSeguros;
         private System.Windows.Forms.Label lbl_CiaSeguros;
         private System.Windows.Forms.Label lbl_NoReclamo;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_NoReclamo;
         private System.Windows.Forms.Button btn_Guardar;
         private System.Windows.Forms.Button btn_Cancelar;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_Cliente;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_nuevoCiaSeguros;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox txt_Observacion;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbo_Ramo;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cbo_Cobertura;
         private System.Windows.Forms.Button button3;
     }
 }

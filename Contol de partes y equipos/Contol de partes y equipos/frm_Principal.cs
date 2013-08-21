@@ -27,12 +27,14 @@ namespace Contol_de_partes_y_equipos
         private void mi_ingresoVehiculo_Click(object sender, EventArgs e)
         {
             frm_IngresoVehiculo frm_IngVehiculo = new frm_IngresoVehiculo();
+            frm_IngVehiculo.MdiParent = this;
             frm_IngVehiculo.Show();
         }
 
         private void mi_ingresoSalvamento_Click(object sender, EventArgs e)
         {
             frm_IngresoSalvamento frm_IngSalvamento = new frm_IngresoSalvamento();
+            frm_IngSalvamento.MdiParent = this;
             frm_IngSalvamento.Show();
         }
 
@@ -40,18 +42,21 @@ namespace Contol_de_partes_y_equipos
         private void mi_rprSalvamentoCia_Click(object sender, EventArgs e)
         {
             frm_RepSalvamentoPorCia frm_repSalvCia = new frm_RepSalvamentoPorCia();
+            frm_repSalvCia.MdiParent = this;
             frm_repSalvCia.Show();
         }
 
         private void mi_rprSalvamentoReclamo_Click(object sender, EventArgs e)
         {
             frm_RepSalvamentoPorReclamo frm_repSalvReclamo = new frm_RepSalvamentoPorReclamo();
+            frm_repSalvReclamo.MdiParent = this;
             frm_repSalvReclamo.Show();
         }
 
         private void mi_rprSalvamentoTaller_Click(object sender, EventArgs e)
         {
             frm_RepSalvamentoPorTaller frm_repSalvTaller = new frm_RepSalvamentoPorTaller();
+            frm_repSalvTaller.MdiParent = this;
             frm_repSalvTaller.Show();
         }
 
