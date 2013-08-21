@@ -34,27 +34,25 @@
             this.mi_ingresoVehiculo = new System.Windows.Forms.ToolStripMenuItem();
             this.mi_ingresoSalvamento = new System.Windows.Forms.ToolStripMenuItem();
             this.mi_mantenimiento = new System.Windows.Forms.ToolStripMenuItem();
+            this.mi_mantCobertura = new System.Windows.Forms.ToolStripMenuItem();
             this.mi_mantRamo = new System.Windows.Forms.ToolStripMenuItem();
             this.mi_mantCiaSeguros = new System.Windows.Forms.ToolStripMenuItem();
             this.mi_mantTaller = new System.Windows.Forms.ToolStripMenuItem();
             this.mi_mantCiudad = new System.Windows.Forms.ToolStripMenuItem();
-            this.mi_reportes = new System.Windows.Forms.ToolStripMenuItem();
-            this.mi_rprSalvamento = new System.Windows.Forms.ToolStripMenuItem();
-            this.mi_rprSalvamentoCia = new System.Windows.Forms.ToolStripMenuItem();
-            this.mi_rprSalvamentoReclamo = new System.Windows.Forms.ToolStripMenuItem();
-            this.mi_rprSalvamentoTaller = new System.Windows.Forms.ToolStripMenuItem();
-            this.mi_rprCia = new System.Windows.Forms.ToolStripMenuItem();
-            this.mi_rprTaller = new System.Windows.Forms.ToolStripMenuItem();
-            this.mi_ayuda = new System.Windows.Forms.ToolStripMenuItem();
-            this.mi_ayudaAyuda = new System.Windows.Forms.ToolStripMenuItem();
-            this.mi_ayudaAcercaDe = new System.Windows.Forms.ToolStripMenuItem();
-            this.mi_mantCobertura = new System.Windows.Forms.ToolStripMenuItem();
             this.marcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.marcaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.vehiculosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.marcaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.modeloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.subModeloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.marcaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mi_reportes = new System.Windows.Forms.ToolStripMenuItem();
+            this.mi_rprSalvamento = new System.Windows.Forms.ToolStripMenuItem();
+            this.mi_rprCia = new System.Windows.Forms.ToolStripMenuItem();
+            this.mi_ayuda = new System.Windows.Forms.ToolStripMenuItem();
+            this.mi_ayudaAyuda = new System.Windows.Forms.ToolStripMenuItem();
+            this.mi_ayudaAcercaDe = new System.Windows.Forms.ToolStripMenuItem();
+            this.mi_rprTaller = new System.Windows.Forms.ToolStripMenuItem();
+            this.mi_rprResumen = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,27 +77,27 @@
             this.mi_ingresoVehiculo,
             this.mi_ingresoSalvamento});
             this.mi_ingreso.Name = "mi_ingreso";
-            this.mi_ingreso.Size = new System.Drawing.Size(58, 20);
+            this.mi_ingreso.Size = new System.Drawing.Size(58, 19);
             this.mi_ingreso.Text = "Ingreso";
             // 
             // mi_ingresoReclamo
             // 
             this.mi_ingresoReclamo.Name = "mi_ingresoReclamo";
-            this.mi_ingresoReclamo.Size = new System.Drawing.Size(152, 22);
+            this.mi_ingresoReclamo.Size = new System.Drawing.Size(151, 22);
             this.mi_ingresoReclamo.Text = "Reclamo";
             this.mi_ingresoReclamo.Click += new System.EventHandler(this.mi_ingresoReclamo_Click);
             // 
             // mi_ingresoVehiculo
             // 
             this.mi_ingresoVehiculo.Name = "mi_ingresoVehiculo";
-            this.mi_ingresoVehiculo.Size = new System.Drawing.Size(152, 22);
+            this.mi_ingresoVehiculo.Size = new System.Drawing.Size(151, 22);
             this.mi_ingresoVehiculo.Text = "Vehiculo";
             this.mi_ingresoVehiculo.Click += new System.EventHandler(this.mi_ingresoVehiculo_Click);
             // 
             // mi_ingresoSalvamento
             // 
             this.mi_ingresoSalvamento.Name = "mi_ingresoSalvamento";
-            this.mi_ingresoSalvamento.Size = new System.Drawing.Size(152, 22);
+            this.mi_ingresoSalvamento.Size = new System.Drawing.Size(151, 22);
             this.mi_ingresoSalvamento.Text = "Parte o equipo";
             this.mi_ingresoSalvamento.Click += new System.EventHandler(this.mi_ingresoSalvamento_Click);
             // 
@@ -114,8 +112,14 @@
             this.marcaToolStripMenuItem,
             this.vehiculosToolStripMenuItem});
             this.mi_mantenimiento.Name = "mi_mantenimiento";
-            this.mi_mantenimiento.Size = new System.Drawing.Size(101, 20);
+            this.mi_mantenimiento.Size = new System.Drawing.Size(101, 19);
             this.mi_mantenimiento.Text = "Mantenimiento";
+            // 
+            // mi_mantCobertura
+            // 
+            this.mi_mantCobertura.Name = "mi_mantCobertura";
+            this.mi_mantCobertura.Size = new System.Drawing.Size(189, 22);
+            this.mi_mantCobertura.Text = "Cobertura";
             // 
             // mi_mantRamo
             // 
@@ -141,86 +145,6 @@
             this.mi_mantCiudad.Size = new System.Drawing.Size(189, 22);
             this.mi_mantCiudad.Text = "Ciudad";
             // 
-            // mi_reportes
-            // 
-            this.mi_reportes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mi_rprSalvamento,
-            this.mi_rprCia,
-            this.mi_rprTaller});
-            this.mi_reportes.Name = "mi_reportes";
-            this.mi_reportes.Size = new System.Drawing.Size(65, 20);
-            this.mi_reportes.Text = "Reportes";
-            // 
-            // mi_rprSalvamento
-            // 
-            this.mi_rprSalvamento.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mi_rprSalvamentoCia,
-            this.mi_rprSalvamentoReclamo,
-            this.mi_rprSalvamentoTaller});
-            this.mi_rprSalvamento.Name = "mi_rprSalvamento";
-            this.mi_rprSalvamento.Size = new System.Drawing.Size(152, 22);
-            this.mi_rprSalvamento.Text = "Salvamentos";
-            // 
-            // mi_rprSalvamentoCia
-            // 
-            this.mi_rprSalvamentoCia.Name = "mi_rprSalvamentoCia";
-            this.mi_rprSalvamentoCia.Size = new System.Drawing.Size(152, 22);
-            this.mi_rprSalvamentoCia.Text = "Por compañia";
-            this.mi_rprSalvamentoCia.Click += new System.EventHandler(this.mi_rprSalvamentoCia_Click);
-            // 
-            // mi_rprSalvamentoReclamo
-            // 
-            this.mi_rprSalvamentoReclamo.Name = "mi_rprSalvamentoReclamo";
-            this.mi_rprSalvamentoReclamo.Size = new System.Drawing.Size(152, 22);
-            this.mi_rprSalvamentoReclamo.Text = "Por reclamo";
-            this.mi_rprSalvamentoReclamo.Click += new System.EventHandler(this.mi_rprSalvamentoReclamo_Click);
-            // 
-            // mi_rprSalvamentoTaller
-            // 
-            this.mi_rprSalvamentoTaller.Name = "mi_rprSalvamentoTaller";
-            this.mi_rprSalvamentoTaller.Size = new System.Drawing.Size(152, 22);
-            this.mi_rprSalvamentoTaller.Text = "Por taller";
-            this.mi_rprSalvamentoTaller.Click += new System.EventHandler(this.mi_rprSalvamentoTaller_Click);
-            // 
-            // mi_rprCia
-            // 
-            this.mi_rprCia.Name = "mi_rprCia";
-            this.mi_rprCia.Size = new System.Drawing.Size(152, 22);
-            this.mi_rprCia.Text = "Compañias";
-            // 
-            // mi_rprTaller
-            // 
-            this.mi_rprTaller.Name = "mi_rprTaller";
-            this.mi_rprTaller.Size = new System.Drawing.Size(152, 22);
-            this.mi_rprTaller.Text = "Talleres";
-            // 
-            // mi_ayuda
-            // 
-            this.mi_ayuda.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mi_ayudaAyuda,
-            this.mi_ayudaAcercaDe});
-            this.mi_ayuda.Name = "mi_ayuda";
-            this.mi_ayuda.Size = new System.Drawing.Size(53, 20);
-            this.mi_ayuda.Text = "Ayuda";
-            // 
-            // mi_ayudaAyuda
-            // 
-            this.mi_ayudaAyuda.Name = "mi_ayudaAyuda";
-            this.mi_ayudaAyuda.Size = new System.Drawing.Size(152, 22);
-            this.mi_ayudaAyuda.Text = "Ayuda";
-            // 
-            // mi_ayudaAcercaDe
-            // 
-            this.mi_ayudaAcercaDe.Name = "mi_ayudaAcercaDe";
-            this.mi_ayudaAcercaDe.Size = new System.Drawing.Size(152, 22);
-            this.mi_ayudaAcercaDe.Text = "Acerca de";
-            // 
-            // mi_mantCobertura
-            // 
-            this.mi_mantCobertura.Name = "mi_mantCobertura";
-            this.mi_mantCobertura.Size = new System.Drawing.Size(189, 22);
-            this.mi_mantCobertura.Text = "Cobertura";
-            // 
             // marcaToolStripMenuItem
             // 
             this.marcaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -228,6 +152,12 @@
             this.marcaToolStripMenuItem.Name = "marcaToolStripMenuItem";
             this.marcaToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.marcaToolStripMenuItem.Text = "Equipos";
+            // 
+            // marcaToolStripMenuItem2
+            // 
+            this.marcaToolStripMenuItem2.Name = "marcaToolStripMenuItem2";
+            this.marcaToolStripMenuItem2.Size = new System.Drawing.Size(107, 22);
+            this.marcaToolStripMenuItem2.Text = "Marca";
             // 
             // vehiculosToolStripMenuItem
             // 
@@ -242,26 +172,76 @@
             // marcaToolStripMenuItem1
             // 
             this.marcaToolStripMenuItem1.Name = "marcaToolStripMenuItem1";
-            this.marcaToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.marcaToolStripMenuItem1.Size = new System.Drawing.Size(135, 22);
             this.marcaToolStripMenuItem1.Text = "Marca";
             // 
             // modeloToolStripMenuItem
             // 
             this.modeloToolStripMenuItem.Name = "modeloToolStripMenuItem";
-            this.modeloToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.modeloToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.modeloToolStripMenuItem.Text = "Modelo";
             // 
             // subModeloToolStripMenuItem
             // 
             this.subModeloToolStripMenuItem.Name = "subModeloToolStripMenuItem";
-            this.subModeloToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.subModeloToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.subModeloToolStripMenuItem.Text = "SubModelo";
             // 
-            // marcaToolStripMenuItem2
+            // mi_reportes
             // 
-            this.marcaToolStripMenuItem2.Name = "marcaToolStripMenuItem2";
-            this.marcaToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
-            this.marcaToolStripMenuItem2.Text = "Marca";
+            this.mi_reportes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mi_rprSalvamento,
+            this.mi_rprCia,
+            this.mi_rprTaller,
+            this.mi_rprResumen});
+            this.mi_reportes.Name = "mi_reportes";
+            this.mi_reportes.Size = new System.Drawing.Size(65, 19);
+            this.mi_reportes.Text = "Reportes";
+            // 
+            // mi_rprSalvamento
+            // 
+            this.mi_rprSalvamento.Name = "mi_rprSalvamento";
+            this.mi_rprSalvamento.Size = new System.Drawing.Size(174, 22);
+            this.mi_rprSalvamento.Text = "Salvamentos";
+            // 
+            // mi_rprCia
+            // 
+            this.mi_rprCia.Name = "mi_rprCia";
+            this.mi_rprCia.Size = new System.Drawing.Size(174, 22);
+            this.mi_rprCia.Text = "Compañias";
+            // 
+            // mi_ayuda
+            // 
+            this.mi_ayuda.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mi_ayudaAyuda,
+            this.mi_ayudaAcercaDe});
+            this.mi_ayuda.Name = "mi_ayuda";
+            this.mi_ayuda.Size = new System.Drawing.Size(53, 19);
+            this.mi_ayuda.Text = "Ayuda";
+            // 
+            // mi_ayudaAyuda
+            // 
+            this.mi_ayudaAyuda.Name = "mi_ayudaAyuda";
+            this.mi_ayudaAyuda.Size = new System.Drawing.Size(126, 22);
+            this.mi_ayudaAyuda.Text = "Ayuda";
+            // 
+            // mi_ayudaAcercaDe
+            // 
+            this.mi_ayudaAcercaDe.Name = "mi_ayudaAcercaDe";
+            this.mi_ayudaAcercaDe.Size = new System.Drawing.Size(126, 22);
+            this.mi_ayudaAcercaDe.Text = "Acerca de";
+            // 
+            // mi_rprTaller
+            // 
+            this.mi_rprTaller.Name = "mi_rprTaller";
+            this.mi_rprTaller.Size = new System.Drawing.Size(174, 22);
+            this.mi_rprTaller.Text = "Talleres";
+            // 
+            // mi_rprResumen
+            // 
+            this.mi_rprResumen.Name = "mi_rprResumen";
+            this.mi_rprResumen.Size = new System.Drawing.Size(174, 22);
+            this.mi_rprResumen.Text = "Resumen reclamos";
             // 
             // frm_Principal
             // 
@@ -273,7 +253,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "frm_Principal";
             this.Text = "Control de partes y equipos";
@@ -297,17 +277,13 @@
         private System.Windows.Forms.ToolStripMenuItem mi_mantCiudad;
         private System.Windows.Forms.ToolStripMenuItem mi_reportes;
         private System.Windows.Forms.ToolStripMenuItem mi_rprSalvamento;
-        private System.Windows.Forms.ToolStripMenuItem mi_rprSalvamentoCia;
-        private System.Windows.Forms.ToolStripMenuItem mi_rprSalvamentoReclamo;
         private System.Windows.Forms.ToolStripMenuItem mi_rprCia;
-        private System.Windows.Forms.ToolStripMenuItem mi_rprTaller;
         private System.Windows.Forms.ToolStripMenuItem mi_ayuda;
         private System.Windows.Forms.ToolStripMenuItem mi_ayudaAyuda;
         private System.Windows.Forms.ToolStripMenuItem mi_ayudaAcercaDe;
         private System.Windows.Forms.ToolStripMenuItem mi_ingresoReclamo;
         private System.Windows.Forms.ToolStripMenuItem mi_ingresoVehiculo;
         private System.Windows.Forms.ToolStripMenuItem mi_ingresoSalvamento;
-        private System.Windows.Forms.ToolStripMenuItem mi_rprSalvamentoTaller;
         private System.Windows.Forms.ToolStripMenuItem mi_mantCobertura;
         private System.Windows.Forms.ToolStripMenuItem marcaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem marcaToolStripMenuItem2;
@@ -315,6 +291,8 @@
         private System.Windows.Forms.ToolStripMenuItem marcaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem modeloToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem subModeloToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mi_rprTaller;
+        private System.Windows.Forms.ToolStripMenuItem mi_rprResumen;
     }
 }
 

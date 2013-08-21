@@ -11,7 +11,8 @@
     <RootNamespace>Contol_de_partes_y_equipos</RootNamespace>
     <AssemblyName>Contol de partes y equipos</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -34,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -47,6 +51,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Datos\Dat_Entidad.cs" />
+    <Compile Include="Datos\Dat_Reclamo.cs" />
+    <Compile Include="Datos\Dat_Salvamento.cs" />
+    <Compile Include="Datos\Dat_Vehiculo.cs" />
+    <Compile Include="Entidades\Entidad.cs" />
+    <Compile Include="Entidades\Reclamo.cs" />
+    <Compile Include="Entidades\Salvamento.cs" />
+    <Compile Include="Entidades\Vehiculo.cs" />
     <Compile Include="frm_InicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,8 +107,24 @@
     <Compile Include="frm_RepSalvamentoPorTaller.Designer.cs">
       <DependentUpon>frm_RepSalvamentoPorTaller.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_RprSalvamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_RprSalvamentos.Designer.cs">
+      <DependentUpon>frm_RprSalvamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Negocios\Dal_Entidad.cs" />
+    <Compile Include="Negocios\Dal_Reclamo.cs" />
+    <Compile Include="Negocios\Dal_Savamento.cs" />
+    <Compile Include="Negocios\Dal_Vehiculo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\rpr_Salvamento.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpr_Salvamento.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="frm_InicioSesion.resx">
       <DependentUpon>frm_InicioSesion.cs</DependentUpon>
     </EmbeddedResource>
@@ -121,6 +149,9 @@
     <EmbeddedResource Include="frm_RepSalvamentoPorTaller.resx">
       <DependentUpon>frm_RepSalvamentoPorTaller.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_RprSalvamentos.resx">
+      <DependentUpon>frm_RprSalvamentos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -131,7 +162,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reportes\rpr_Salvamento.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpr_Salvamento.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -150,6 +186,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
