@@ -127,5 +127,20 @@ namespace Contol_de_partes_y_equipos.Datos
             catch { throw; }
         }
 
+        public DataTable llenar_Reporte(int ciaSeguros, string fechaInicio, string fechaFin)
+        {
+            SqlConnection conexion = new SqlConnection(cadenaConexion);
+            SqlCommand cmd = new SqlCommand("proc_Salvamento", conexion);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@accion", "rs");
+            cmd.Parameters.AddWithValue("@CiaSeguros_Codigo", ciaSeguros);
+            cmd.Parameters.AddWithValue("@fechaInicio", fechaInicio);
+            cmd.Parameters.AddWithValue("@fechaFin", fechaFin);
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            return dt;
+        }
+
     }
 }

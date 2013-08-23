@@ -36,11 +36,8 @@ C:\Users\user\Documents\Visual Studio 2010\Projects\Contol de partes y equipos\C
 C:\Users\user\Documents\Visual Studio 2010\Projects\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Release\Contol de partes y equipos.csprojResolveAssemblyReference.cache
 C:\Users\user\Documents\Visual Studio 2010\Projects\Contol de partes y equipos\Contol de partes y equipos\bin\Release\Contol de partes y equipos.exe.config
 C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\bin\Release\Contol de partes y equipos.exe.config
-C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Release\Contol de partes y equipos.exe
-C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Release\Contol de partes y equipos.pdb
 C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\bin\Release\Contol de partes y equipos.exe
 C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\bin\Release\Contol de partes y equipos.pdb
-C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Release\Contol de partes y equipos.csprojResolveAssemblyReference.cache
 C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Release\Contol_de_partes_y_equipos.frm_InicioSesion.resources
 C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Release\Contol_de_partes_y_equipos.frm_IngresoSalvamento.resources
 C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Release\Contol_de_partes_y_equipos.frm_IngresoReclamo.resources
@@ -49,5 +46,8 @@ C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de parte
 C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Release\Contol_de_partes_y_equipos.frm_RepSalvamentoPorCia.resources
 C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Release\Contol_de_partes_y_equipos.frm_RepSalvamentoPorReclamo.resources
 C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Release\Contol_de_partes_y_equipos.frm_RepSalvamentoPorTaller.resources
+C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Release\Contol_de_partes_y_equipos.frm_RprSalvamentos.resources
 C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Release\Contol_de_partes_y_equipos.Properties.Resources.resources
 C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Release\Contol de partes y equipos.csproj.GenerateResource.Cache
+C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Release\Contol de partes y equipos.exe
+C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Release\Contol de partes y equipos.pdb

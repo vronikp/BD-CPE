@@ -48,11 +48,11 @@
             this.mi_reportes = new System.Windows.Forms.ToolStripMenuItem();
             this.mi_rprSalvamento = new System.Windows.Forms.ToolStripMenuItem();
             this.mi_rprCia = new System.Windows.Forms.ToolStripMenuItem();
+            this.mi_rprTaller = new System.Windows.Forms.ToolStripMenuItem();
+            this.mi_rprResumen = new System.Windows.Forms.ToolStripMenuItem();
             this.mi_ayuda = new System.Windows.Forms.ToolStripMenuItem();
             this.mi_ayudaAyuda = new System.Windows.Forms.ToolStripMenuItem();
             this.mi_ayudaAcercaDe = new System.Windows.Forms.ToolStripMenuItem();
-            this.mi_rprTaller = new System.Windows.Forms.ToolStripMenuItem();
-            this.mi_rprResumen = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -203,12 +203,25 @@
             this.mi_rprSalvamento.Name = "mi_rprSalvamento";
             this.mi_rprSalvamento.Size = new System.Drawing.Size(174, 22);
             this.mi_rprSalvamento.Text = "Salvamentos";
+            this.mi_rprSalvamento.Click += new System.EventHandler(this.mi_rprSalvamento_Click);
             // 
             // mi_rprCia
             // 
             this.mi_rprCia.Name = "mi_rprCia";
             this.mi_rprCia.Size = new System.Drawing.Size(174, 22);
             this.mi_rprCia.Text = "Compañias";
+            // 
+            // mi_rprTaller
+            // 
+            this.mi_rprTaller.Name = "mi_rprTaller";
+            this.mi_rprTaller.Size = new System.Drawing.Size(174, 22);
+            this.mi_rprTaller.Text = "Talleres";
+            // 
+            // mi_rprResumen
+            // 
+            this.mi_rprResumen.Name = "mi_rprResumen";
+            this.mi_rprResumen.Size = new System.Drawing.Size(174, 22);
+            this.mi_rprResumen.Text = "Resumen reclamos";
             // 
             // mi_ayuda
             // 
@@ -230,18 +243,6 @@
             this.mi_ayudaAcercaDe.Name = "mi_ayudaAcercaDe";
             this.mi_ayudaAcercaDe.Size = new System.Drawing.Size(126, 22);
             this.mi_ayudaAcercaDe.Text = "Acerca de";
-            // 
-            // mi_rprTaller
-            // 
-            this.mi_rprTaller.Name = "mi_rprTaller";
-            this.mi_rprTaller.Size = new System.Drawing.Size(174, 22);
-            this.mi_rprTaller.Text = "Talleres";
-            // 
-            // mi_rprResumen
-            // 
-            this.mi_rprResumen.Name = "mi_rprResumen";
-            this.mi_rprResumen.Size = new System.Drawing.Size(174, 22);
-            this.mi_rprResumen.Text = "Resumen reclamos";
             // 
             // frm_Principal
             // 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data;
 
 namespace Contol_de_partes_y_equipos.Negocios
 {
@@ -93,6 +94,13 @@ namespace Contol_de_partes_y_equipos.Negocios
                 dSalvam.guardarSalvamento(salvamento);
             }
             catch { throw; }
+        }
+
+        public DataTable llenar_Reporte(int ciaSeguros, string fechaInicio, string fechaFin)
+        {
+            DataTable dt = new DataTable();
+            dt = dSalvam.llenar_Reporte(ciaSeguros,  fechaInicio,  fechaFin);
+            return dt;
         }
     }
 }

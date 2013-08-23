@@ -65,6 +65,13 @@ namespace Contol_de_partes_y_equipos
 
         }
 
+        private void mi_rprSalvamento_Click(object sender, EventArgs e)
+        {
+            frm_RprSalvamentos frm_rprSalv = new frm_RprSalvamentos();
+            frm_rprSalv.MdiParent = this;
+            frm_rprSalv.Show();
+        }
+
         
     }
 }
