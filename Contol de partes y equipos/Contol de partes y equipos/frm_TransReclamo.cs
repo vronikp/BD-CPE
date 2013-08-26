@@ -9,11 +9,11 @@ using System.Windows.Forms;
 
 namespace Contol_de_partes_y_equipos
 {
-    public partial class frm_IngresoReclamo : Form
+    public partial class frm_TransReclamo : Form
     {
         Negocios.Dal_Reclamo dalReclamo = new Negocios.Dal_Reclamo();
 
-        public frm_IngresoReclamo()
+        public frm_TransReclamo()
         {
             InitializeComponent();
         }

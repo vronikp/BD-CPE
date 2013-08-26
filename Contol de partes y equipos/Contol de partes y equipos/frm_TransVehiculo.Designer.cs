@@ -1,6 +1,6 @@
 ﻿namespace Contol_de_partes_y_equipos
 {
-    partial class frm_IngresoVehiculo
+    partial class frm_TransVehiculo
     {
         /// <summary>
         /// Required designer variable.

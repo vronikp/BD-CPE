@@ -10,12 +10,12 @@ C:\Users\user\AppData\Local\Temporary Projects\Contol de partes y equipos\obj\x8
 C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\bin\Debug\Contol de partes y equipos.exe.config
 C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\bin\Debug\Contol de partes y equipos.exe
 C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\bin\Debug\Contol de partes y equipos.pdb
+C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Debug\Contol_de_partes_y_equipos.frm_Datos.resources
 C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Debug\Contol_de_partes_y_equipos.frm_InicioSesion.resources
-C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Debug\Contol_de_partes_y_equipos.frm_IngresoSalvamento.resources
-C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Debug\Contol_de_partes_y_equipos.frm_IngresoReclamo.resources
-C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Debug\Contol_de_partes_y_equipos.frm_IngresoVehiculo.resources
+C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Debug\Contol_de_partes_y_equipos.frm_TransSalvamento.resources
+C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Debug\Contol_de_partes_y_equipos.frm_TransReclamo.resources
+C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Debug\Contol_de_partes_y_equipos.frm_TransVehiculo.resources
 C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Debug\Contol_de_partes_y_equipos.frm_Principal.resources
-C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Debug\Contol_de_partes_y_equipos.frm_ReporteSalvamento.resources
 C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Debug\Contol_de_partes_y_equipos.frm_RepSalvamentoPorCia.resources
 C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Debug\Contol_de_partes_y_equipos.frm_RepSalvamentoPorReclamo.resources
 C:\Users\user\Documents\GitHub\BD-CPE\Contol de partes y equipos\Contol de partes y equipos\obj\x86\Debug\Contol_de_partes_y_equipos.frm_RepSalvamentoPorTaller.resources

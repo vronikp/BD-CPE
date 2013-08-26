@@ -9,11 +9,11 @@ using System.Windows.Forms;
 
 namespace Contol_de_partes_y_equipos
 {
-    public partial class frm_IngresoVehiculo : Form
+    public partial class frm_TransVehiculo : Form
     {
         Negocios.Dal_Vehiculo dalVehiculo = new Negocios.Dal_Vehiculo();
 
-        public frm_IngresoVehiculo()
+        public frm_TransVehiculo()
         {
             InitializeComponent();
         }

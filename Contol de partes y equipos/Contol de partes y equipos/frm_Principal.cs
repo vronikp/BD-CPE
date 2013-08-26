@@ -11,6 +11,9 @@ namespace Contol_de_partes_y_equipos
 {
     public partial class frm_Principal : Form
     {
+        
+        public static int codigo = -1;
+
         public frm_Principal()
         {
             InitializeComponent();
@@ -19,21 +22,21 @@ namespace Contol_de_partes_y_equipos
 
         private void mi_ingresoReclamo_Click(object sender, EventArgs e)
         {
-            frm_IngresoReclamo frm_IngReclamo = new frm_IngresoReclamo();
+            frm_TransReclamo frm_IngReclamo = new frm_TransReclamo();
             frm_IngReclamo.MdiParent = this;
             frm_IngReclamo.Show();
         }
 
         private void mi_ingresoVehiculo_Click(object sender, EventArgs e)
         {
-            frm_IngresoVehiculo frm_IngVehiculo = new frm_IngresoVehiculo();
+            frm_TransVehiculo frm_IngVehiculo = new frm_TransVehiculo();
             frm_IngVehiculo.MdiParent = this;
             frm_IngVehiculo.Show();
         }
 
         private void mi_ingresoSalvamento_Click(object sender, EventArgs e)
         {
-            frm_IngresoSalvamento frm_IngSalvamento = new frm_IngresoSalvamento();
+            frm_TransSalvamento frm_IngSalvamento = new frm_TransSalvamento();
             frm_IngSalvamento.MdiParent = this;
             frm_IngSalvamento.Show();
         }
@@ -62,7 +65,7 @@ namespace Contol_de_partes_y_equipos
 
         private void frm_Principal_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void mi_rprSalvamento_Click(object sender, EventArgs e)

@@ -23,6 +23,8 @@ namespace Contol_de_partes_y_equipos
         private void frm_RprSalvamentos_Load(object sender, EventArgs e)
         {
             dalReclamo.llenarCiaSeguros(cbo_CiaSeguros);
+            dalReclamo.llenarRamo(cbo_Ramo);
+            dalReclamo.llenarCobertura(cbo_Cobertura);
         }
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
@@ -42,8 +44,22 @@ namespace Contol_de_partes_y_equipos
         public DataTable verReporte()
         {
             DataTable dt = new DataTable();
-            dt = dSalvam.llenar_Reporte(Convert.ToInt32(cbo_CiaSeguros.SelectedValue), dtp_FechaInicio.Value.ToString("yyyy-MM-dd"), dtp_FechaFin.Value.ToString("yyyy-MM-dd"));
+            dt = dSalvam.llenar_Reporte(Convert.ToInt32(cbo_CiaSeguros.SelectedValue), 
+                dtp_FechaInicio.Value.ToString("yyyy-MM-dd"), dtp_FechaFin.Value.ToString("yyyy-MM-dd"),
+                Convert.ToInt32(cbo_Ramo.SelectedValue), Convert.ToInt32(cbo_Cobertura.SelectedValue));
             return dt;
+        }
+
+        private void chk_RangoFechas_CheckedChanged(object sender, EventArgs e)
+        {
+            if(chk_RangoFechas.Checked == true)
+            {
+                dtp_FechaFin.Visible = true;
+                dtp_FechaInicio.Visible = true;
+            }else{
+                dtp_FechaFin.Visible = false;
+                dtp_FechaInicio.Visible = false;
+            }
         }
     }
 }

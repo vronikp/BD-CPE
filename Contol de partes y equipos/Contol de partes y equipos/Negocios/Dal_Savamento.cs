@@ -69,10 +69,11 @@ namespace Contol_de_partes_y_equipos.Negocios
             return marca;
         }
 
-        public void guardarSalvamento(string Salvam_Descripcion, string Salvam_Observacion, int Vehiculo_Codigo, int Parame_Conjunto, 
+        public void guardarSalvamento(int Salvam_Codigo, string Salvam_Descripcion, string Salvam_Observacion, int Vehiculo_Codigo, int Parame_Conjunto, 
             int Pardet_Conjunto, int Parame_Accesorio, int Pardet_Accesorio, int Parame_Marca, int Pardet_Marca, 
             string Salvam_Modelo, string Salvam_Serie, int Reclamo_Codigo, int Taller_Codigo)
         {
+            salvamento.Salvam_Codigo = Salvam_Codigo;
             salvamento.Salvam_Descripcion = Salvam_Descripcion;
             salvamento.Salvam_Observacion = Salvam_Observacion;
             salvamento.Vehiculo_Codigo = Vehiculo_Codigo;
@@ -96,11 +97,31 @@ namespace Contol_de_partes_y_equipos.Negocios
             catch { throw; }
         }
 
-        public DataTable llenar_Reporte(int ciaSeguros, string fechaInicio, string fechaFin)
+
+        public DataTable llenar_Reporte(int ciaSeguros, string fechaInicio, string fechaFin, int ramo, int cobertura)
         {
             DataTable dt = new DataTable();
-            dt = dSalvam.llenar_Reporte(ciaSeguros,  fechaInicio,  fechaFin);
+            dt = dSalvam.llenar_Reporte(ciaSeguros,  fechaInicio,  fechaFin, ramo, cobertura);
             return dt;
+        }
+
+        public DataTable listar()
+        {
+            DataTable dt = new DataTable();
+            dt = dSalvam.listar();
+            return dt;
+        }
+
+        public DataTable buscar(int codigo)
+        {
+            DataTable dt = new DataTable();
+            dt = dSalvam.buscar(codigo);
+            return dt;
+        }
+
+        public int esNuevo(int codigo)
+        {
+            return dSalvam.esNuevo(codigo);
         }
     }
 }

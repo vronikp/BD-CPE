@@ -63,29 +63,35 @@
     <Compile Include="Entidades\Reclamo.cs" />
     <Compile Include="Entidades\Salvamento.cs" />
     <Compile Include="Entidades\Vehiculo.cs" />
+    <Compile Include="frm_Datos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Datos.Designer.cs">
+      <DependentUpon>frm_Datos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_InicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_InicioSesion.Designer.cs">
       <DependentUpon>frm_InicioSesion.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_IngresoReclamo.cs">
+    <Compile Include="frm_TransReclamo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_IngresoReclamo.Designer.cs">
-      <DependentUpon>frm_IngresoReclamo.cs</DependentUpon>
+    <Compile Include="frm_TransReclamo.Designer.cs">
+      <DependentUpon>frm_TransReclamo.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_IngresoSalvamento.cs">
+    <Compile Include="frm_TransSalvamento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_IngresoSalvamento.Designer.cs">
-      <DependentUpon>frm_IngresoSalvamento.cs</DependentUpon>
+    <Compile Include="frm_TransSalvamento.Designer.cs">
+      <DependentUpon>frm_TransSalvamento.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_IngresoVehiculo.cs">
+    <Compile Include="frm_TransVehiculo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_IngresoVehiculo.Designer.cs">
-      <DependentUpon>frm_IngresoVehiculo.cs</DependentUpon>
+    <Compile Include="frm_TransVehiculo.Designer.cs">
+      <DependentUpon>frm_TransVehiculo.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_Principal.cs">
       <SubType>Form</SubType>
@@ -129,17 +135,20 @@
       <DependentUpon>rpt_Salvamento.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="frm_Datos.resx">
+      <DependentUpon>frm_Datos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_InicioSesion.resx">
       <DependentUpon>frm_InicioSesion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_IngresoSalvamento.resx">
-      <DependentUpon>frm_IngresoSalvamento.cs</DependentUpon>
+    <EmbeddedResource Include="frm_TransSalvamento.resx">
+      <DependentUpon>frm_TransSalvamento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_IngresoReclamo.resx">
-      <DependentUpon>frm_IngresoReclamo.cs</DependentUpon>
+    <EmbeddedResource Include="frm_TransReclamo.resx">
+      <DependentUpon>frm_TransReclamo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_IngresoVehiculo.resx">
-      <DependentUpon>frm_IngresoVehiculo.cs</DependentUpon>
+    <EmbeddedResource Include="frm_TransVehiculo.resx">
+      <DependentUpon>frm_TransVehiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Principal.resx">
       <DependentUpon>frm_Principal.cs</DependentUpon>
@@ -171,7 +180,6 @@
       <LastGenOutput>rpt_Salvamento.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -196,6 +204,21 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash-Delete-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

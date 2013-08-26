@@ -102,7 +102,16 @@ namespace Contol_de_partes_y_equipos.Datos
             conexion.Open();
             SqlCommand cmd = new SqlCommand("proc_Salvamento", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@accion", "i");
+
+            if (esNuevo(salvamento.Salvam_Codigo) == 0)
+            {
+                cmd.Parameters.AddWithValue("@accion", "i");
+            }
+            else
+            {
+                cmd.Parameters.AddWithValue("@accion", "m");
+            }
+            cmd.Parameters.AddWithValue("@Salvam_Codigo", salvamento.Salvam_Codigo);
             cmd.Parameters.AddWithValue("@Salvam_Descripcion",salvamento.Salvam_Descripcion);
             cmd.Parameters.AddWithValue("@Salvam_Observacion", salvamento.Salvam_Observacion);
             cmd.Parameters.AddWithValue("@Vehiculo_Codigo", salvamento.Vehiculo_Codigo);
@@ -127,13 +136,15 @@ namespace Contol_de_partes_y_equipos.Datos
             catch { throw; }
         }
 
-        public DataTable llenar_Reporte(int ciaSeguros, string fechaInicio, string fechaFin)
+        public DataTable llenar_Reporte(int ciaSeguros, string fechaInicio, string fechaFin, int ramo, int cobertura)
         {
             SqlConnection conexion = new SqlConnection(cadenaConexion);
             SqlCommand cmd = new SqlCommand("proc_Salvamento", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@accion", "rs");
             cmd.Parameters.AddWithValue("@CiaSeguros_Codigo", ciaSeguros);
+            cmd.Parameters.AddWithValue("@Pardet_Ramo", ramo);
+            cmd.Parameters.AddWithValue("@Pardet_Cobertura", cobertura);
             cmd.Parameters.AddWithValue("@fechaInicio", fechaInicio);
             cmd.Parameters.AddWithValue("@fechaFin", fechaFin);
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
@@ -142,5 +153,43 @@ namespace Contol_de_partes_y_equipos.Datos
             return dt;
         }
 
+
+        public DataTable listar()
+        {
+            SqlConnection conexion = new SqlConnection(cadenaConexion);
+            SqlCommand cmd = new SqlCommand("proc_Salvamento", conexion);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@accion", "ls");
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            return dt;
+        }
+
+        public DataTable buscar(int codigo)
+        {
+            SqlConnection conexion = new SqlConnection(cadenaConexion);
+            SqlCommand cmd = new SqlCommand("proc_Salvamento", conexion);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@accion", "bs");
+            cmd.Parameters.AddWithValue("@Salvam_Codigo", codigo);
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            return dt;
+        }
+
+        public int esNuevo(int codigo)
+        {
+            SqlConnection conexion = new SqlConnection(cadenaConexion);
+            SqlCommand cmd = new SqlCommand("proc_Salvamento", conexion);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@accion", "nuevo");
+            cmd.Parameters.AddWithValue("@Salvam_Codigo", codigo);
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            return Convert.ToInt32(dt.Rows[0][0].ToString());
+        }
     }
 }

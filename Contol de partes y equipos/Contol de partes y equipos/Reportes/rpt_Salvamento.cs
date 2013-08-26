@@ -16,14 +16,14 @@ namespace Contol_de_partes_y_equipos.Reportes {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class rpr_Salvamento : ReportClass {
+    public class rpt_Salvamento : ReportClass {
         
-        public rpr_Salvamento() {
+        public rpt_Salvamento() {
         }
         
         public override string ResourceName {
             get {
-                return "rpr_Salvamento.rpt";
+                return "rpt_Salvamento.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace Contol_de_partes_y_equipos.Reportes {
         
         public override string FullResourceName {
             get {
-                return "Contol_de_partes_y_equipos.Reportes.rpr_Salvamento.rpt";
+                return "Contol_de_partes_y_equipos.Reportes.rpt_Salvamento.rpt";
             }
             set {
                 // Do nothing
@@ -82,7 +82,7 @@ namespace Contol_de_partes_y_equipos.Reportes {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section3 {
+        public CrystalDecisions.CrystalReports.Engine.Section GroupHeaderSection3 {
             get {
                 return this.ReportDefinition.Sections[4];
             }
@@ -90,7 +90,7 @@ namespace Contol_de_partes_y_equipos.Reportes {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section GroupFooterSection2 {
+        public CrystalDecisions.CrystalReports.Engine.Section Section3 {
             get {
                 return this.ReportDefinition.Sections[5];
             }
@@ -98,7 +98,7 @@ namespace Contol_de_partes_y_equipos.Reportes {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section GroupFooterSection1 {
+        public CrystalDecisions.CrystalReports.Engine.Section GroupFooterSection3 {
             get {
                 return this.ReportDefinition.Sections[6];
             }
@@ -106,7 +106,7 @@ namespace Contol_de_partes_y_equipos.Reportes {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
+        public CrystalDecisions.CrystalReports.Engine.Section GroupFooterSection2 {
             get {
                 return this.ReportDefinition.Sections[7];
             }
@@ -114,17 +114,33 @@ namespace Contol_de_partes_y_equipos.Reportes {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
+        public CrystalDecisions.CrystalReports.Engine.Section GroupFooterSection1 {
             get {
                 return this.ReportDefinition.Sections[8];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
+            get {
+                return this.ReportDefinition.Sections[9];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
+            get {
+                return this.ReportDefinition.Sections[10];
             }
         }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class Cachedrpr_Salvamento : Component, ICachedReport {
+    public class Cachedrpt_Salvamento : Component, ICachedReport {
         
-        public Cachedrpr_Salvamento() {
+        public Cachedrpt_Salvamento() {
         }
         
         [Browsable(false)]
@@ -161,7 +177,7 @@ namespace Contol_de_partes_y_equipos.Reportes {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            rpr_Salvamento rpt = new rpr_Salvamento();
+            rpt_Salvamento rpt = new rpt_Salvamento();
             rpt.Site = this.Site;
             return rpt;
         }

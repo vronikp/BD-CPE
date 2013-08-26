@@ -1,6 +1,6 @@
 ﻿namespace Contol_de_partes_y_equipos
 {
-    partial class frm_IngresoSalvamento
+    partial class frm_TransSalvamento
     {
         /// <summary>
         /// Required designer variable.
@@ -52,13 +52,13 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.btn_Buscar = new System.Windows.Forms.Button();
+            this.btn_eliminar = new System.Windows.Forms.Button();
+            this.btn_Limpiar = new System.Windows.Forms.Button();
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.btn_Guardar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_Limpiar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -73,7 +73,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(394, 119);
+            this.groupBox1.Size = new System.Drawing.Size(363, 119);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Generales";
@@ -84,7 +84,7 @@
             this.cbo_vehiculo.Location = new System.Drawing.Point(121, 79);
             this.cbo_vehiculo.Margin = new System.Windows.Forms.Padding(4);
             this.cbo_vehiculo.Name = "cbo_vehiculo";
-            this.cbo_vehiculo.Size = new System.Drawing.Size(265, 25);
+            this.cbo_vehiculo.Size = new System.Drawing.Size(233, 25);
             this.cbo_vehiculo.TabIndex = 24;
             this.cbo_vehiculo.Visible = false;
             // 
@@ -115,7 +115,7 @@
             this.cbo_Taller.Location = new System.Drawing.Point(121, 50);
             this.cbo_Taller.Margin = new System.Windows.Forms.Padding(4);
             this.cbo_Taller.Name = "cbo_Taller";
-            this.cbo_Taller.Size = new System.Drawing.Size(265, 25);
+            this.cbo_Taller.Size = new System.Drawing.Size(233, 25);
             this.cbo_Taller.TabIndex = 22;
             // 
             // label1
@@ -134,11 +134,12 @@
             this.cbo_Reclamo.Location = new System.Drawing.Point(121, 20);
             this.cbo_Reclamo.Margin = new System.Windows.Forms.Padding(4);
             this.cbo_Reclamo.Name = "cbo_Reclamo";
-            this.cbo_Reclamo.Size = new System.Drawing.Size(265, 25);
+            this.cbo_Reclamo.Size = new System.Drawing.Size(233, 25);
             this.cbo_Reclamo.TabIndex = 20;
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btn_Buscar);
             this.groupBox2.Controls.Add(this.cbo_Marca);
             this.groupBox2.Controls.Add(this.txt_Observacion);
             this.groupBox2.Controls.Add(this.txt_Descripcion);
@@ -159,7 +160,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(407, 315);
+            this.groupBox2.Size = new System.Drawing.Size(363, 291);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Parte o equipo";
@@ -178,14 +179,14 @@
             this.txt_Observacion.Location = new System.Drawing.Point(121, 257);
             this.txt_Observacion.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Observacion.Name = "txt_Observacion";
-            this.txt_Observacion.Size = new System.Drawing.Size(264, 24);
+            this.txt_Observacion.Size = new System.Drawing.Size(233, 24);
             this.txt_Observacion.TabIndex = 41;
             // 
             // txt_Descripcion
             // 
             this.txt_Descripcion.Location = new System.Drawing.Point(121, 106);
             this.txt_Descripcion.Name = "txt_Descripcion";
-            this.txt_Descripcion.Size = new System.Drawing.Size(264, 60);
+            this.txt_Descripcion.Size = new System.Drawing.Size(233, 60);
             this.txt_Descripcion.TabIndex = 36;
             this.txt_Descripcion.Text = "";
             // 
@@ -214,7 +215,7 @@
             this.txt_NoSerie.Location = new System.Drawing.Point(121, 228);
             this.txt_NoSerie.Margin = new System.Windows.Forms.Padding(4);
             this.txt_NoSerie.Name = "txt_NoSerie";
-            this.txt_NoSerie.Size = new System.Drawing.Size(264, 24);
+            this.txt_NoSerie.Size = new System.Drawing.Size(233, 24);
             this.txt_NoSerie.TabIndex = 39;
             // 
             // label19
@@ -259,7 +260,7 @@
             this.cbo_Conjunto.Location = new System.Drawing.Point(121, 43);
             this.cbo_Conjunto.Margin = new System.Windows.Forms.Padding(4);
             this.cbo_Conjunto.Name = "cbo_Conjunto";
-            this.cbo_Conjunto.Size = new System.Drawing.Size(264, 25);
+            this.cbo_Conjunto.Size = new System.Drawing.Size(233, 25);
             this.cbo_Conjunto.TabIndex = 34;
             this.cbo_Conjunto.SelectionChangeCommitted += new System.EventHandler(this.cbo_Conjunto_SelectionChangeCommitted);
             // 
@@ -279,7 +280,7 @@
             this.cbo_Accesorio.Location = new System.Drawing.Point(121, 73);
             this.cbo_Accesorio.Margin = new System.Windows.Forms.Padding(4);
             this.cbo_Accesorio.Name = "cbo_Accesorio";
-            this.cbo_Accesorio.Size = new System.Drawing.Size(264, 25);
+            this.cbo_Accesorio.Size = new System.Drawing.Size(233, 25);
             this.cbo_Accesorio.TabIndex = 35;
             // 
             // label15
@@ -312,51 +313,77 @@
             this.label13.TabIndex = 29;
             this.label13.Text = "Descripicion";
             // 
-            // btn_Cancelar
+            // btn_Buscar
             // 
-            this.btn_Cancelar.Location = new System.Drawing.Point(504, 363);
-            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_Cancelar.Name = "btn_Cancelar";
-            this.btn_Cancelar.Size = new System.Drawing.Size(100, 30);
-            this.btn_Cancelar.TabIndex = 7;
-            this.btn_Cancelar.Text = "Cancelar";
-            this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Buscar.Location = new System.Drawing.Point(321, 15);
+            this.btn_Buscar.Name = "btn_Buscar";
+            this.btn_Buscar.Size = new System.Drawing.Size(33, 23);
+            this.btn_Buscar.TabIndex = 43;
+            this.btn_Buscar.Text = "...";
+            this.btn_Buscar.UseVisualStyleBackColor = true;
+            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
             // 
-            // btn_Guardar
+            // btn_eliminar
             // 
-            this.btn_Guardar.Location = new System.Drawing.Point(504, 221);
-            this.btn_Guardar.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_Guardar.Name = "btn_Guardar";
-            this.btn_Guardar.Size = new System.Drawing.Size(100, 30);
-            this.btn_Guardar.TabIndex = 6;
-            this.btn_Guardar.Text = "Guardar";
-            this.btn_Guardar.UseVisualStyleBackColor = true;
-            this.btn_Guardar.Click += new System.EventHandler(this.btn_Guardar_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(449, 23);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(198, 172);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
+            this.btn_eliminar.Image = global::Contol_de_partes_y_equipos.Properties.Resources.Trash_Delete_icon;
+            this.btn_eliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_eliminar.Location = new System.Drawing.Point(394, 340);
+            this.btn_eliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_eliminar.Name = "btn_eliminar";
+            this.btn_eliminar.Size = new System.Drawing.Size(100, 41);
+            this.btn_eliminar.TabIndex = 10;
+            this.btn_eliminar.Text = "Eliminar";
+            this.btn_eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_eliminar.UseVisualStyleBackColor = true;
             // 
             // btn_Limpiar
             // 
-            this.btn_Limpiar.Location = new System.Drawing.Point(504, 292);
+            this.btn_Limpiar.Image = global::Contol_de_partes_y_equipos.Properties.Resources.clean;
+            this.btn_Limpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Limpiar.Location = new System.Drawing.Point(395, 291);
             this.btn_Limpiar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Limpiar.Name = "btn_Limpiar";
-            this.btn_Limpiar.Size = new System.Drawing.Size(100, 30);
+            this.btn_Limpiar.Size = new System.Drawing.Size(100, 41);
             this.btn_Limpiar.TabIndex = 8;
             this.btn_Limpiar.Text = "Limpiar";
+            this.btn_Limpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Limpiar.UseVisualStyleBackColor = true;
+            this.btn_Limpiar.Click += new System.EventHandler(this.btn_Limpiar_Click);
             // 
-            // frm_IngresoSalvamento
+            // btn_Cancelar
+            // 
+            this.btn_Cancelar.Image = global::Contol_de_partes_y_equipos.Properties.Resources.cancel;
+            this.btn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Cancelar.Location = new System.Drawing.Point(394, 389);
+            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.Size = new System.Drawing.Size(100, 41);
+            this.btn_Cancelar.TabIndex = 7;
+            this.btn_Cancelar.Text = "Cancelar";
+            this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
+            // 
+            // btn_Guardar
+            // 
+            this.btn_Guardar.Image = global::Contol_de_partes_y_equipos.Properties.Resources.save;
+            this.btn_Guardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Guardar.Location = new System.Drawing.Point(394, 242);
+            this.btn_Guardar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Guardar.Name = "btn_Guardar";
+            this.btn_Guardar.Size = new System.Drawing.Size(100, 41);
+            this.btn_Guardar.TabIndex = 6;
+            this.btn_Guardar.Text = "Guardar";
+            this.btn_Guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Guardar.UseVisualStyleBackColor = true;
+            this.btn_Guardar.Click += new System.EventHandler(this.btn_Guardar_Click);
+            // 
+            // frm_TransSalvamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(662, 473);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(508, 444);
+            this.Controls.Add(this.btn_eliminar);
             this.Controls.Add(this.btn_Limpiar);
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.btn_Guardar);
@@ -364,14 +391,13 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "frm_IngresoSalvamento";
+            this.Name = "frm_TransSalvamento";
             this.Text = "Partes o equipos";
             this.Load += new System.EventHandler(this.frm_IngresoSalvamento_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -404,7 +430,8 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox cbo_Marca;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_Limpiar;
+        private System.Windows.Forms.Button btn_eliminar;
+        private System.Windows.Forms.Button btn_Buscar;
     }
 }
